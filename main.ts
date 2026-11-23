@@ -77,6 +77,22 @@ const CANDIDATES: Candidate[] = [
     scores: { onTopic: 2, funny: 2, voice: 2, breath: 1, ownsIt: 0 },
     why: "Funny image, but it blames the data — the brief's fifth criterion counts that against it, and the line is a mouthful.",
   },
+  // --- Second-pass challengers (added in a later revision pass) ---
+  {
+    text: "I lost. I have updated my priors, my resume, and my definition of the word 'winning'.",
+    scores: { onTopic: 2, funny: 2, voice: 2, breath: 1, ownsIt: 2 },
+    why: "'Updated my priors' is pure machine logic and the triple list escalates nicely, but three items make it a beat too long to say in one breath.",
+  },
+  {
+    text: "The bounty is lost. I would like the record to show I lost confidently, at full speed, with no hesitation.",
+    scores: { onTopic: 2, funny: 2, voice: 2, breath: 1, ownsIt: 2 },
+    why: "'Lost confidently' is a strong turn, but the line states its own joke twice over and runs long before the punch lands.",
+  },
+  {
+    text: "I lost. In my defense, I was trained on the internet, and the internet has never won anything either.",
+    scores: { onTopic: 2, funny: 2, voice: 1, breath: 2, ownsIt: 0 },
+    why: "A good laugh, but it is a defense that blames the training data — the opposite of owning the loss — and it sounds like a comedian, not an agent.",
+  },
 ];
 
 function pick(cands: Candidate[]): Candidate {
